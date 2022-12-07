@@ -39,8 +39,8 @@ const links = [
   },
   {
     id:  7,
-    url: "/summaversity",
-    text: "Summaversity"
+    url: "/sumaversity",
+    text: "Sumaversity"
   }
 ];
 
@@ -65,7 +65,7 @@ const Navbar = () => {
         </h2>
       </div>
 
-      <div className="grid gap-2">
+      <nav className="grid gap-2 py-2">
         <Link
           href={"/"}
           className={`flex items-center justify-center py-2 text-center border rounded-md hover:bg-white hover:text-primary ${
@@ -85,7 +85,7 @@ const Navbar = () => {
             {l.text}
           </Link>
         ))}
-      </div>
+      </nav>
 
       <div className="flex flex-col gap-1 pt-6 border-t-2 border-t-white">
         <div className="flex-1 ">

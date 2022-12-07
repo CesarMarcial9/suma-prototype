@@ -7,11 +7,11 @@ type Props = {
 
 const DashboardLayout = ({children}: Props) => {
   return (
-    <div className="flex flex-col h-screen ">
+    <div className="flex flex-col lg:h-screen">
 
-      <div className="grid flex-1 grid-cols-6 grid-rows-1 gap-4 p-6 bg-primary">
+      <div className="grid flex-1 grid-rows-1 gap-4 p-6 lg:grid-cols-6 bg-primary">
         <Navbar />
-        <div className="col-span-5 bg-white rounded-md shadow-sm">
+        <div className="bg-white rounded-md shadow-sm lg:col-span-5">
             {children}
         </div>
       </div>
